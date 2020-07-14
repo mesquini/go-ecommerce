@@ -23,7 +23,7 @@ ordersRouter.post(
       customer_id: Joi.string().uuid().required(),
       products: Joi.array().items({
         id: Joi.string().uuid().required(),
-        quantity: Joi.number().required(),
+        quantity: Joi.number(),
       }),
     },
   }),
